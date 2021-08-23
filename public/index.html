@@ -10,6 +10,17 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- PRISM -->
+    <link rel="stylesheet" href="css/new-prism.css" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,6 +36,36 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .page-intro {
+        background-color: white;
+        width: 100vw;
+        min-height: 100vh;
+      }
+
+      img {
+        max-width: 80%;
+      }
+
+      .mdb-page-content {
+        padding-left: 240px;
+        transition: padding 0.3s linear;
+      }
+
+      
+
+      @media (max-width: 660px) {
+        .mdb-page-content {
+          padding-left: 0px;
+        }
+
+        
+
+        .mask img {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +81,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+    
 </html>
